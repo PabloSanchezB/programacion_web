@@ -7,7 +7,7 @@ const Header =()=>{
     return(
         <Row>
             <Col className="col py5 text-center border">
-                <Link to='/store'>Store</Link>
+                <Link to='/'>Store</Link>
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <Link to='/about'>About</Link>
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
