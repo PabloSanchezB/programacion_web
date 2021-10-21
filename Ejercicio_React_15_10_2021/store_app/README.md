@@ -1,6 +1,6 @@
-# Ejercicio de React 15-10-2021
+# Ejercicio de Reactjs + jsx + propiedades
 
 ## Integrantes:
-PABLO SANCHEZ\
-DANIEL ALVARADO
+PABLO ANDRES SANCHEZ BERNAL - 2018214003\
+DANIEL RICHERSON ALVARADO AMARIS - 2017114144
 
