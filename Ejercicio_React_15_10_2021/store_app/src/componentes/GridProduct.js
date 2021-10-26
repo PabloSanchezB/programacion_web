@@ -16,7 +16,19 @@ const GridProduct=()=>{
         {id:1,nombre:'Pork - Chop, Frenched',Precio:'199.16'}
     ]
     return(
-        <>
+        <Row className="g-3">
+            {items.map((item) => {
+                return(
+                    <Col className="col-4">
+                        <div className="border px-3 pt-2">
+                        <ProductItem producto = {item}/>
+                        </div>
+                    </Col>
+                )
+            })}
+        </Row>
+
+        /*<>
         <Row>
             <Col className="border  m-1">
                 <ProductItem producto = {items[0]}/>
@@ -50,7 +62,7 @@ const GridProduct=()=>{
             <ProductItem producto = {items[8]}/>
             </Col>
         </Row>
-        </>
+        </>*/
     );
 }
 export default GridProduct

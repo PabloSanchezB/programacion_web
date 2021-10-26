@@ -16,6 +16,8 @@ const Header =()=>{
                 </svg>
                 <Link to='/cart'>Cart</Link>
                 <span>(0)</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <Link to='/admin_product'>Administrar Productos</Link>
             </Col>
         </Row>
     );
