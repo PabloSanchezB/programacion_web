@@ -1,4 +1,4 @@
-# Ejercicio de Reactjs + jsx + propiedades
+# Reactjs uso del hook useState
 
 ## Integrantes:
 PABLO ANDRES SANCHEZ BERNAL - 2018214003\
