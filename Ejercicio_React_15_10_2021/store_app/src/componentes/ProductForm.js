@@ -23,6 +23,8 @@ export default function ProductForm(props){
     }
 
     return(
+        <>
+        <h3>Agregar Producto</h3>
         <form onSubmit={onSubmitForm}> 
 
             <div className="mb-3">
@@ -40,6 +42,7 @@ export default function ProductForm(props){
             </div>
 
       </form>
+      </>
     );
 
 }

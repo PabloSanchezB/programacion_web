@@ -28,41 +28,6 @@ const GridProduct=()=>{
             })}
         </Row>
 
-        /*<>
-        <Row>
-            <Col className="border  m-1">
-                <ProductItem producto = {items[0]}/>
-            </Col>
-            <Col className="border m-1">
-            <ProductItem producto = {items[1]}/>
-            </Col>
-            <Col className="border m-1">
-            <ProductItem producto = {items[2]}/>
-            </Col>
-        </Row>
-        <Row>
-            <Col className="border m-2">
-            <ProductItem producto = {items[3]}/>
-            </Col>
-            <Col className="border m-2">
-            <ProductItem producto = {items[4]}/>
-            </Col>
-            <Col className="border m-2">
-            <ProductItem producto = {items[5]}/>
-            </Col>
-        </Row>
-        <Row>
-            <Col className="border m-2">
-            <ProductItem producto = {items[6]}/>
-            </Col>
-            <Col className="border m-2">
-            <ProductItem producto = {items[7]}/>
-            </Col>
-            <Col className="border m-2">
-            <ProductItem producto = {items[8]}/>
-            </Col>
-        </Row>
-        </>*/
     );
 }
 export default GridProduct

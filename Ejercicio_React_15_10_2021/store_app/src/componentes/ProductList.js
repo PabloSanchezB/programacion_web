@@ -6,7 +6,10 @@ import ProductForm from "./ProductForm";
 import EditProdForm from "./EditProdForm";
 
 export default function ProductList(){
-    const itemsInitial = [];
+    const itemsInitial = [
+        {id:0,nombre:'Buffalo - Striploin',Precio:'39.11'},
+        {id:1,nombre:'Bacardi Brezzer - Tropical',Precio:'257.92'}
+    ];
 
     const [items, setItems] = useState(itemsInitial);
 
@@ -14,7 +17,7 @@ export default function ProductList(){
 
     const [auxItem, setAuxItem] = useState({});
 
-    const [idCount, setIdCount] = useState(1);
+    const [idCount, setIdCount] = useState(itemsInitial.length);
 
     const alEnviarForm = (itemFromForm) => {
         const idI = idCount;
@@ -47,26 +50,28 @@ export default function ProductList(){
     }
 
     return (
-        <> 
         <Row>
+            <Col className="col-4">
             {showForm(showEditForm)}
-        </Row>
-        <Row className="border"> 
-            <Col>
+            </Col>
+            <Col className="col-8 border">
+            <Row className="g-3">
             {
             
                 items.map(item => (
-                    <>
+                    <Col className="col-4">
+                        <div className="border px-3 pt-2">
                         <AdmProductItem producto={item} eliminar={alEliminar} showEdit={setShowEditForm} 
                         aux={setAuxItem}/> 
-                    </>
+                        </div>
+                    </Col>
                     )
                 )
             
             }
+            </Row>
             </Col>
         </Row>
-        </>
     );
 }
 

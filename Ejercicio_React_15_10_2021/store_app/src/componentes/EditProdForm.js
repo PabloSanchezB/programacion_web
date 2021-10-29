@@ -23,11 +23,13 @@ export default function EditProdForm(props){
     }
 
     return(
+        <>
+        <h3>Modificar Producto</h3>
         <form onSubmit={onSubmitForm}> 
 
             <div className="mb-3">
                 <label htmlFor="nameProduct" className="form-label">Nombre del Producto</label>
-                <input type="text" class="form-control" id="nameProduct" 
+                <input autoFocus type="text" class="form-control" id="nameProduct" 
                 name="nombre" value={estadoForm.nombre} onChange={gestionarCamposForm} />
             </div>
             <div className="mb-3">
@@ -40,6 +42,7 @@ export default function EditProdForm(props){
             </div>
 
       </form>
+      </>
     );
 
 }

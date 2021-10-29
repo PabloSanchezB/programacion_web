@@ -7,9 +7,8 @@ export default function AdmProductos(){
     return(
         <>
         <Row>
-            <Col className="col py5 text-center border">
+            <Col className="col pb-4 text-center border ">
                 <h1>Administrar Productos</h1>
-                <span>Agregar Producto</span>
             </Col>
         </Row>
         <ProductList />
