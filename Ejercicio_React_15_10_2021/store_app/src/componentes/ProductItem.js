@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {Col, Row} from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
+import { CartContext } from '../contexts/CartContext'
 
 const ProductItem=(props)=>{
     const{nombre, Precio}=props.producto
+    const{addProduct} = useContext(CartContext);
     return(
         <div className="item">
             <Row className="">
@@ -18,7 +20,7 @@ const ProductItem=(props)=>{
             </Row>
             <Row>
                 <Col className="py-4 text-end">
-                <Button variant="light">Details</Button> <Button variant="dark">Add To Cart</Button>{' '}
+                <Button variant="light">Details</Button> <Button variant="dark">Add To Cart</Button>
                 </Col>
             </Row>
         </div>
