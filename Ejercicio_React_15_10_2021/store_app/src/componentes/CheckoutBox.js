@@ -5,6 +5,8 @@ export default function CheckoutBox(){
     const {clearCart, handleCheckout, itemCount, total} = useContext(CartContext);
     
     return(
-        <></>
+        <>
+        
+        </>
     );
 }
